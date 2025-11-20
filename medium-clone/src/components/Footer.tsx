@@ -1,10 +1,7 @@
-// src/components/Footer.tsx
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <p>© 2025 My Medium Clone – Built for learning</p>
-      </div>
+    <footer className="bg-gray-100 p-4 mt-4 text-center text-green-600">
+      &copy; 2025 Medium Clone
     </footer>
   );
 }

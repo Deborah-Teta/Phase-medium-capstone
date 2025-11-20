@@ -6,7 +6,11 @@
 
 generator client {
   provider = "prisma-client"
+<<<<<<< Updated upstream
   output   = "../app/generated/prisma"
+=======
+  output   = "../src/generated/prisma"
+>>>>>>> Stashed changes
 }
 
 datasource db {
@@ -14,9 +18,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model User {
+<<<<<<< Updated upstream
   id        String   @id @default(uuid())
   email     String   @unique
   name      String?
   createdAt DateTime @default(now())
   
 }
+=======
+  id        String   @id @default(cuid())
+  email     String   @unique
+  username  String
+  createdAt DateTime @default(now())
+}
+>>>>>>> Stashed changes

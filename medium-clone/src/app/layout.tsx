@@ -1,26 +1,18 @@
-// src/app/layout.tsx
-import type { Metadata } from "next";
-import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import './globals.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-export const metadata: Metadata = {
-  title: "My Medium Clone",
-  description: "A publishing platform like Medium",
+export const metadata = {
+  title: 'Medium Clone',
+  description: 'Phase2 Frontend Capstone Project',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-gray-50">
+      <body className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-8">
-          {children}
-        </main>
+        <main className="flex-1 container mx-auto px-4">{children}</main>
         <Footer />
       </body>
     </html>
